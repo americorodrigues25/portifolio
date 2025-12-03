@@ -1,3 +1,4 @@
+// components
 import Accordion from "./Accordion";
 
 interface ProjectCardProps {
@@ -16,18 +17,16 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div>
-      {/* Topo: imagem + título */}
-      <div className="flex flex-col md:flex-row items-center gap-6">
+      <div className="flex flex-col lg:flex-row items-center gap-6">
 
-        <img src={project.image} alt={project.title} className="w-[450px] rounded-lg shadow-lg" />
+        <img src={project.image} alt={project.title} className="w-full max-w-[450px] h-auto rounded-lg shadow-lg object-cover" />
 
         <div className="flex flex-col">
           <h2 className="text-xl font-bold text-slate-800 text-center">{project.title}</h2>
-          <p className="text-slate-600 mt-1 text-center lg:px-20">{project.shortDescription}</p>
+          <p className="text-slate-600 mt-1 text-center">{project.shortDescription}</p>
         </div>
       </div>
 
-      {/* Acordeões */}
       <div className="mt-8 space-y-1">
         <Accordion label="Descrição detalhada do projeto:">
           <p>{project.details}</p>

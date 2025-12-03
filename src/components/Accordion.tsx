@@ -1,8 +1,10 @@
 import { useState } from "react";
+
+// biblioteca externa
 import { motion } from "framer-motion";
 
+// icones
 import { IoChevronDown, IoChevronUp } from "react-icons/io5";
-
 
 interface AccordionProps {
   label: string;
@@ -22,7 +24,6 @@ export default function Accordion({ label, children }: AccordionProps) {
         <span className="text-slate-400 text-lg">
           {open ? <IoChevronUp /> : <IoChevronDown />}
         </span>
-
       </button>
 
       <motion.div

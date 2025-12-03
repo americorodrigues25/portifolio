@@ -1,23 +1,30 @@
 import { Link, useLocation } from "react-router-dom";
+import type { IconType } from "react-icons";
 
+// icones
 import { MdOutlineEmail } from "react-icons/md";
 import { HiOutlineAcademicCap, HiOutlineCog8Tooth } from "react-icons/hi2";
 import { IoCodeSlashSharp } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
 
+// components
 import SocialLinks from "./SocialLinks";
-
 
 interface SidebarProps {
   onClickLink?: () => void;
 }
 
+interface MenuItem {
+  label: string;
+  path: string;
+  icon: IconType;
+}
+
 export default function Sidebar({ onClickLink }: SidebarProps) {
   const { pathname } = useLocation();
-
   const activePath = pathname === "/" ? "/about" : pathname;
 
-  const menu = [
+  const menu: MenuItem[] = [
     { label: "Sobre mim", path: "/about", icon: FiUser },
     { label: "Meus projetos", path: "/projects", icon: IoCodeSlashSharp },
     { label: "Acadêmico", path: "/academic", icon: HiOutlineAcademicCap },
@@ -27,12 +34,11 @@ export default function Sidebar({ onClickLink }: SidebarProps) {
 
   return (
     <aside className="w-72 h-screen bg-slate-950 px-5 py-10 flex flex-col overflow-y-auto">
-
-      {/* FOTO E NOME */}
       <div className="flex flex-col items-center">
         <div className="bg-slate-800 p-2 rounded-full">
           <img
             src="/img-perfil.png"
+            alt="Imagem de perfil"
             className="w-28 h-28 rounded-full object-cover"
           />
         </div>
@@ -43,30 +49,30 @@ export default function Sidebar({ onClickLink }: SidebarProps) {
         <SocialLinks />
       </div>
 
-      {/* LINKS */}
       <nav className="mt-8 flex flex-col gap-3">
-        {menu.map(item => (
+        {menu.map((item) => (
           <Link
             key={item.path}
             to={item.path}
             onClick={onClickLink}
             className={`py-3 pl-5 rounded-l-2xl transition duration-200
-              ${activePath === item.path
-                ? "bg-slate-800 text-slate-200 font-semibold"
-                : "text-slate-200 hover:bg-slate-600"
+              ${
+                activePath === item.path
+                  ? "bg-slate-800 text-slate-200 font-semibold"
+                  : "text-slate-200 hover:bg-slate-600"
               }`}
           >
             <item.icon className="inline mr-3 text-lg align-middle relative" />
             <span
-              className={`align-middle text-base text-slate-200 ${activePath === item.path ? "font-semibold" : "font-extralight"
-                }`}
+              className={`align-middle text-base text-slate-200 ${
+                activePath === item.path ? "font-semibold" : "font-extralight"
+              }`}
             >
               {item.label}
             </span>
           </Link>
         ))}
       </nav>
-
     </aside>
   );
 }

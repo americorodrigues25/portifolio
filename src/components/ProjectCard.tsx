@@ -1,4 +1,5 @@
 // components
+import type { JSX } from "react";
 import Accordion from "./Accordion";
 
 interface ProjectCardProps {
@@ -7,7 +8,7 @@ interface ProjectCardProps {
     title: string;
     shortDescription: string;
     details: string;
-    techs: string[];
+    techs: { name: string; icon: JSX.Element }[];
     demo: string;
     github: string;
     linkedin: string;
@@ -33,9 +34,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </Accordion>
 
         <Accordion label="Tecnologias utilizadas:">
-          <ul className="list-disc ml-4">
-            {project.techs.map((t: string) => (
-              <li key={t}>{t}</li>
+          <ul className="list-disc space-y-2 ml-4">
+            {project.techs.map((tecch) => (
+              <li key={tecch.name} className="flex items-center gap-2">
+                {tecch.icon}
+                <span>{tecch.name}</span>
+              </li>
             ))}
           </ul>
         </Accordion>

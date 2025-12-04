@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
+// icones
+import { IoClose } from "react-icons/io5";
+
+// components
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
-import { IoClose } from "react-icons/io5";
 
 export default function Main() {
     const [open, setOpen] = useState<boolean>(false);
@@ -18,22 +21,23 @@ export default function Main() {
         "/contact": { title: "Contato", subtitle: "Aqui você terá acesso aos meus contatos diretos !" },
     };
 
-    const currentHeader = headers[pathname];
+    const currentHeader = headers[pathname] ?? {
+        title: "",
+        subtitle: "",
+    };
 
     return (
         <div className="flex min-h-screen bg-gray-200 text-white">
 
-            {/* SIDEBAR — DESKTOP */}
             <div className="hidden md:block">
                 <Sidebar />
             </div>
 
-            {/* SIDEBAR MOBILE (ANIMAÇÃO DESLIZANDO) */}
             <div
                 className={`fixed top-0 left-0 h-full w-72 bg-slate-950 z-40 transform transition-transform duration-300 
         ${open ? "translate-x-0" : "-translate-x-full"} md:hidden`}
             >
-                {/* BOTÃO FECHAR */}
+
                 <button
                     className="absolute top-4 right-4 text-white"
                     onClick={() => setOpen(false)}
@@ -45,21 +49,18 @@ export default function Main() {
             </div>
             {open && (
                 <div
-                    className="fixed inset-0 bg-black/70 bg-opacity-50 z-30 md:hidden">
+                    className="fixed inset-0 bg-black/70 z-30 md:hidden">
                 </div>
             )}
 
-            {/* ÁREA DIREITA: HEADER FIXO + CONTEÚDO */}
             <div className="flex-1 flex flex-col h-screen overflow-hidden">
 
-                {/* HEADER FIXO */}
                 {currentHeader && (
                     <div className="shrink-0">
                         <Header title={currentHeader.title} subtitle={currentHeader.subtitle} onMenuClick={() => setOpen(true)} isOpen={open} />
                     </div>
                 )}
 
-                {/* CONTEÚDO QUE MUDA */}
                 <main className="flex-1 overflow-y-auto">
                     <Outlet />
                 </main>

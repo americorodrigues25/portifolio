@@ -1,5 +1,7 @@
+// components
 import Accordion from "../components/Accordion";
 
+// icones
 import { TbExternalLink } from "react-icons/tb";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 
@@ -27,8 +29,8 @@ export default function Academic() {
   ];
 
   return (
-    <div className="m-5 bg-white p-5 rounded shadow-inner shadow-gray-400">
-      <h2 className="text-xl font-semibold text-slate-950 mb-3">Graduação</h2>
+    <main className="m-5 bg-white p-5 rounded shadow-inner shadow-gray-400">
+      <h1 className="text-xl font-semibold text-slate-950 mb-3">Graduação</h1>
 
       <div className="space-y-1 mb-10">
         <Accordion label="Análise e Desenvolvimento de Sistemas" >
@@ -78,6 +80,6 @@ export default function Academic() {
         ))}
       </div>
 
-    </div>
+    </main>
   );
 }

@@ -58,7 +58,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </Accordion>
 
         <Accordion label="Links:">
-          <div className="flex flex-col md:flex-row gap-4 mt-2">
+          <div className="flex flex-col lg:flex-row gap-4 mt-2">
 
             <a
               href={project.url}

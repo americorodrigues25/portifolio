@@ -18,7 +18,7 @@ export default function Accordion({ label, children }: AccordionProps) {
     <div className="overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center text-left p-4 bg-slate-950 hover:bg-slate-800 transition rounded-t"
+        className="w-full flex justify-between items-center text-left p-4 bg-slate-950 hover:bg-slate-800 transition rounded-t cursor-pointer"
       >
         <p className="text-slate-400">{label}</p>
         <span className="text-slate-400 text-lg">

@@ -27,7 +27,7 @@ export default function Projects() {
         <button
           onClick={prev}
           aria-label="Voltar para o projeto anterior"
-          className="px-4 py-2 flex items-center gap-2 transition-all duration-200 hover:opacity-90 hover:-translate-x-1"
+          className="px-4 py-2 flex items-center gap-2 transition-all duration-200 hover:opacity-90 hover:-translate-x-1 cursor-pointer"
 
         >
           <span className="text-slate-200 bg-slate-950 p-2 rounded-full transition-all duration-200">
@@ -40,7 +40,7 @@ export default function Projects() {
         <button
           onClick={next}
           aria-label="Avançar para o próximo projeto"
-          className="px-4 py-2 flex items-center gap-2 transition-all duration-200 hover:opacity-90 hover:translate-x-1"
+          className="px-4 py-2 flex items-center gap-2 transition-all duration-200 hover:opacity-90 hover:translate-x-1 cursor-pointer"
         >
           <p className="text-slate-950 hidden md:block">Avançar</p>
           <span className="text-slate-200 bg-slate-950 p-2 rounded-full transition-all duration-200">

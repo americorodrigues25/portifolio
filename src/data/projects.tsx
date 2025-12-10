@@ -122,20 +122,22 @@ export const projects = [
   },
   {
     id: 4,
-    title: "DevBlog | Plataforma de Blogs para Desenvolvedores",
+    title: "DevBlog | Blog para Desenvolvedores",
     type: "Projeto pessoal",
     shortDescription:
-      "DevBlog é uma plataforma onde desenvolvedores podem criar, compartilhar e descobrir artigos técnicos sobre programação e tecnologia.",
+      "DevBlog é um blog interativo para usuários criar, compartilhar e editar posts, além de acompanhar publicações de outros usuários.",
     image: devblog,
     techs: [
       { name: "React", icon: <FaReact className={techIconClass} /> },
-      { name: "Styled Components", icon: <SiStyledcomponents className={techIconClass} /> },
       { name: "Node.js", icon: <SiNodedotjs className={techIconClass} /> },
       { name: "Express", icon: <SiExpress className={techIconClass} /> },
-      { name: "MongoDB", icon: <SiMongodb className={techIconClass} /> },
+      { name: "Firebase", icon: <SiFirebase className={techIconClass} /> },
     ],
     details:
-      `O DevBlog é uma plataforma dedicada a desenvolvedores, onde eles podem criar, compartilhar e descobrir artigos técnicos sobre programação e tecnologia.`,
+      `O DevBlog foi desenvolvido em React para o frontend e node para o backend. Utilizei o Firebase para autenticação e armazenamento de dados.
+
+      Os usuários podem criar contas, fazer login, criar, editar e excluir posts. Também é possível visualizar posts de outros usuários em um feed interativo.  
+      `,
     github: "https://github.com/americorodrigues25/DevBlog",
     linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7371878040051736576/",
     video: demodevblog,

@@ -20,7 +20,7 @@ export default function About() {
           <div className="text-slate-950 space-y-1">
             <div className="flex items-center gap-1">
               <MdMyLocation className="text-slate-900 text-lg" />
-              <span>Suzano</span>
+              <span>Suzano, SP</span>
             </div>
 
             <p className="text-slate-800">React • Next.js • Typescript</p>
@@ -45,27 +45,22 @@ export default function About() {
           Desenvolvedor Front-End
         </h1>
         <p className="mb-2 text-slate-600">
-          Olá ! Me chamo Américo sou formado em Análise e Desenvolvimento de
-          Sistemas, e atualmente estou cursando pós graduaçõa em Inteligência
-          Artificial. Sou um grande apaixonado por tecnologia e tudo que envolve
-          desenvolvimento. Sou curioso, gosto de aprender coisas novas e me
-          dedicar a ter bons conceitos tecnicos para poder aplica-los na
-          pratica.
+          👋 Ei! Sou o Américo, desenvolvedor front-end. Formado em Análise e Desenvolvimento de
+          Sistemas, e um grande apaixonado por tecnologia e tudo que envolve
+          desenvolvimento. Sou curioso, gosto de mergulhar de cabeça em tudo que envolve desenvolvimento. Sou movido por curiosidade,
+          disciplina e pela vontade de transformar ideias em interfaces funcionais, modernas e fiéis ao design.
         </p>
         <p className="mb-2 text-slate-600">
-          Gosto de ter disciplina e constancia nos estudos, como um bom
-          desenvolvedor Front-End me preocupo em fidelizar ao maximo os design
-          na hora do desenvolvimento.
-        </p>
-        <p className="mb-2 text-slate-600">
-          Minhas tecnologias principais são React, Next.js e Typescript, mas
-          você pode acessar outras tecnologias que tenho dominio e conhecimento
-          na sessão “habilidades”
+          Minha principal tecnologia é <b>React</b>, e atualmente venho me aprofundando ainda mais em <b>Next.js</b> e <b>Typescript</b>.
+          Além do front-end, também tenho experiência com Node.js e bancos de dados como Firebase, MongoDb e Mysql, o que me ajuda a entender melhor o fluxo
+          completo das aplicações.
+          Estou sempre explorando novas ferramentas e pensando em evoluir, inclusive estou planejando cursar Engenharia de
+          Software para expandir ainda mais meus conhecimentos.
         </p>
         <p className="text-slate-600">
-          Estou aberto a novas oportunidades e desafios, se quiser saber mais
-          sobre mim ou entrar em contato, fique a vontade para me chamar nas
-          redes sociais.
+          No momento, estou dando meus próximos passos para ingressar oficialmente no mercado como desenvolvedor
+          front-end. Estou aberto a novas oportunidades e desafios, se quiser saber mais sobre mim ou entrar em contato,
+          fique à vontade para me chamar nas redes sociais.
         </p>
       </div>
     </main>

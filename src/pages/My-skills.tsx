@@ -24,28 +24,29 @@ import { VscSourceControl } from "react-icons/vsc";
 
 export default function Skills() {
   const hardSkills = [
-    { icon: <FaReact aria-hidden="true" />, name: "React" },
-    { icon: <RiNextjsFill aria-hidden="true" />, name: "Next.js" },
-    { icon: <BiLogoTypescript aria-hidden="true" />, name: "TypeScript" },
-    { icon: <IoLogoJavascript aria-hidden="true" />, name: "JavaScript" },
-    { icon: <RiTailwindCssFill aria-hidden="true" />, name: "Tailwind CSS" },
-    { icon: <FaBootstrap aria-hidden="true" />, name: "Bootstrap" },
+    { icon: <FaReact aria-hidden="true" />, name: "React", description: "Sólido conhecimento em react, criando aplicações modernas e responsivas." },
+    { icon: <RiNextjsFill aria-hidden="true" />, name: "Next.js", description: "teste" },
+    { icon: <BiLogoTypescript aria-hidden="true" />, name: "TypeScript", description: "teste" },
+    { icon: <IoLogoJavascript aria-hidden="true" />, name: "JavaScript", description: "teste" },
+    { icon: <RiTailwindCssFill aria-hidden="true" />, name: "Tailwind CSS", description: "teste" },
+    { icon: <FaBootstrap aria-hidden="true" />, name: "Bootstrap", description: "teste" },
     {
       icon: <SiStyledcomponents aria-hidden="true" />,
       name: "Styled Components",
+      description: "teste"
     },
-    { icon: <FaNodeJs aria-hidden="true" />, name: "Node.js" },
-    { icon: <TbApi aria-hidden="true" />, name: "APIs REST" },
-    { icon: <TbBrandMysql aria-hidden="true" />, name: "MySQL" },
-    { icon: <IoLogoFirebase aria-hidden="true" />, name: "Firebase" },
-    { icon: <SiMongodb aria-hidden="true" />, name: "MongoDB" },
-    { icon: <VscSourceControl aria-hidden="true" />, name: "Git & GitHub" },
-    { icon: <SiJest aria-hidden="true" />, name: "Jest" },
-    { icon: <SiCypress aria-hidden="true" />, name: "Cypress" },
-    { icon: <SiPostman aria-hidden="true" />, name: "Postman" },
-    { icon: <SiVercel aria-hidden="true" />, name: "Vercel" },
-    { icon: <SiRender aria-hidden="true" />, name: "Render" },
-    { icon: <SiJirasoftware aria-hidden="true" />, name: "Scrum & Agile" },
+    { icon: <FaNodeJs aria-hidden="true" />, name: "Node.js", description: "teste" },
+    { icon: <TbApi aria-hidden="true" />, name: "APIs REST", description: "teste" },
+    { icon: <TbBrandMysql aria-hidden="true" />, name: "MySQL", description: "teste" },
+    { icon: <IoLogoFirebase aria-hidden="true" />, name: "Firebase", description: "teste" },
+    { icon: <SiMongodb aria-hidden="true" />, name: "MongoDB", description: "teste" },
+    { icon: <VscSourceControl aria-hidden="true" />, name: "Git & GitHub", description: "teste" },
+    { icon: <SiJest aria-hidden="true" />, name: "Jest", description: "teste" },
+    { icon: <SiCypress aria-hidden="true" />, name: "Cypress", description: "teste" },
+    { icon: <SiPostman aria-hidden="true" />, name: "Postman", description: "teste" },
+    { icon: <SiVercel aria-hidden="true" />, name: "Vercel", description: "teste" },
+    { icon: <SiRender aria-hidden="true" />, name: "Render", description: "teste" },
+    { icon: <SiJirasoftware aria-hidden="true" />, name: "Scrum & Agile", description: "teste" },
   ];
 
   const softSkills = [
@@ -79,10 +80,27 @@ export default function Skills() {
         {hardSkills.map((skill, i) => (
           <div
             key={i}
-            className="flex flex-col items-center justify-center gap-2 py-6  bg-slate-200 border-slate-800 border-b-8 rounded-lg hover:translate-y-1 transition-all rounded-tl-4xl rounded-br-4xl"
+            className="relative group"
           >
-            <p className="text-3xl text-slate-800">{skill.icon}</p>
-            <p className="text-sm font-medium text-slate-800 text-center">{skill.name}</p>
+            <div
+              className="flex flex-col items-center justify-center gap-2 py-6 bg-slate-200 
+                 border-slate-800 border-b-8 rounded-lg hover:translate-y-1 
+                 transition-all rounded-tl-4xl rounded-br-4xl"
+            >
+              <p className="text-3xl text-slate-800">{skill.icon}</p>
+              <p className="text-sm font-medium text-slate-800 text-center">{skill.name}</p>
+            </div>
+
+            {skill?.description && (
+              <div
+                className="absolute left-1/2 -bottom-4 translate-y-full -translate-x-1/2 z-50
+                   w-max max-w-[150px] px-3 py-2 text-xs text-slate-200 bg-slate-800 rounded 
+                   opacity-0 group-hover:opacity-100 group-hover:translate-y-[90%]
+                   transition-all duration-500 ease-in-out pointer-events-none shadow-lg text-center"
+              >
+                {skill.description}
+              </div>
+            )}
           </div>
         ))}
       </section>

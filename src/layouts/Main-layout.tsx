@@ -27,7 +27,7 @@ export default function Main() {
     };
 
     return (
-        <div className="flex min-h-screen bg-gray-200 text-white">
+        <div className="flex min-h-screen bg-gray-200 text-slate-200">
 
             <div className="hidden md:block">
                 <Sidebar />
@@ -39,7 +39,7 @@ export default function Main() {
             >
 
                 <button
-                    className="absolute top-4 right-4 text-white"
+                    className="absolute top-4 right-4 text-slate-200 cursor-pointer"
                     onClick={() => setOpen(false)}
                 >
                     <IoClose size={32} />
@@ -49,11 +49,14 @@ export default function Main() {
             </div>
             {open && (
                 <div
-                    className="fixed inset-0 bg-black/70 z-30 md:hidden">
+                    className="fixed inset-0 bg-black/70 z-30 md:hidden"
+                    onClick={() => setOpen(false)}
+                >
                 </div>
             )}
 
-            <div className="flex-1 flex flex-col h-screen overflow-hidden">
+            <div className="flex-1 flex flex-col h-screen overflow-hidden"
+            >
 
                 {currentHeader && (
                     <div className="shrink-0">

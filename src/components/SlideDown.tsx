@@ -6,12 +6,12 @@ import { motion } from "framer-motion";
 // icones
 import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 
-interface AccordionProps {
+interface SlideDownProps {
   label: string;
   children: React.ReactNode;
 }
 
-export default function Accordion({ label, children }: AccordionProps) {
+export default function SlideDown({ label, children }: SlideDownProps) {
   const [open, setOpen] = useState(false);
 
   return (

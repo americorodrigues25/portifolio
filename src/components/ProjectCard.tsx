@@ -1,10 +1,11 @@
 import { useState } from "react";
-// components
 import type { JSX } from "react";
-import Accordion from "./Accordion";
 
+// components
+import SlideDown from "./SlideDown";
+
+// icons
 import { FaExternalLinkAlt, FaGithub, FaLinkedin } from "react-icons/fa";
-
 
 interface ProjectCardProps {
   project: {
@@ -24,8 +25,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const [selectedImage, setSelectedImage] = useState(null);
-
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const badgeStyle =
     project.type === "Freelance" || project.type === "Projeto pessoal" || project.type === "Projeto Acadêmico"
@@ -54,11 +54,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       <div className="mt-8 space-y-1">
-        <Accordion label="Descrição:">
+        <SlideDown label="Descrição:">
           <p className="whitespace-pre-line">{project.details}</p>
-        </Accordion>
+        </SlideDown>
 
-        <Accordion label="Tecnologias utilizadas:">
+        <SlideDown label="Tecnologias utilizadas:">
           <ul className="list-disc space-y-2 ml-4">
             {project.techs.map((tecch) => (
               <li key={tecch.name} className="flex items-center gap-2">
@@ -67,9 +67,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               </li>
             ))}
           </ul>
-        </Accordion>
+        </SlideDown>
 
-        <Accordion label="Links:">
+        <SlideDown label="Links:">
           <div className="flex flex-col lg:flex-row gap-4 mt-2">
 
             {project.url && (
@@ -103,7 +103,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             )}
 
           </div>
-        </Accordion>
+        </SlideDown>
 
         {project.video ? (
 
@@ -152,7 +152,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <div className="relative max-w-3xl w-full px-4">
                   <img
                     src={selectedImage}
-                    className="w-full max-h-[80vh] object-contain rounded-lg"
+                      className="w-full max-h-[80vh] object-contain rounded-lg"
+                      alt={`${project.title} - imagem ampliada`}
                   />
                   <button
                     onClick={() => setSelectedImage(null)}

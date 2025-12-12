@@ -19,7 +19,7 @@ import demodevblog from "../assets/video/devblog.mp4";
 
 // icones
 import { FaReact } from "react-icons/fa";
-import { SiStyledcomponents, SiTailwindcss, SiFirebase, SiExpress, SiMongodb, SiCss3, SiPostman, SiExpo, SiNodedotjs   } from "react-icons/si";
+import { SiStyledcomponents, SiTailwindcss, SiFirebase, SiExpress, SiMongodb, SiCss3, SiPostman, SiExpo, SiNodedotjs } from "react-icons/si";
 
 const techIconClass = "text-slate-400 text-2xl";
 
@@ -102,6 +102,10 @@ export const projects = [
       `O Cardion Fitness é um aplicativo desenvolvido como Trabalho de Conclusão de Curso (TCC), com o objetivo de oferecer uma ferramenta prática e moderna para organização e acompanhamento de treinos voltados à musculação.
 
     O app permite que os usuários visualizem treinos personalizados, registrem séries e repetições, acompanhem sua evolução física e recebam orientações para melhorar o desempenho. Tudo de forma simples e intuitiva.
+
+    O app Cardion Fitness possui dois fluxos principais:
+    Personais: podem criar treinos, avaliações e acompanhar o progresso dos alunos.
+    Alunos: além de acesso a treinos e avaliações, têm uma experiência gamificada com rankings, conquistas, desafios e um sistema de pontuação que valoriza cada avanço.
 
     O projeto foi construído utilizando React Native no frontend, Node.js no backend e Firebase para autenticação e armazenamento em nuvem, garantindo segurança, rapidez e sincronização dos dados em tempo real.
 

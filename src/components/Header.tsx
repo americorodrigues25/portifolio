@@ -22,7 +22,7 @@ const Header = ({ title, subtitle, onMenuClick, isOpen }: HeaderProps) => {
       </div>
 
       {!isOpen && (
-        <button className="md:hidden text-slate-200 mt-1" onClick={onMenuClick}>
+        <button className="md:hidden text-slate-200 mt-1 cursor-pointer" onClick={onMenuClick}>
           <RxHamburgerMenu size={28} />
         </button>
       )}

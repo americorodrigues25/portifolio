@@ -1,5 +1,5 @@
 // components
-import Accordion from "../components/Accordion";
+import SlideDown from "../components/SlideDown";
 
 // icones
 import { TbExternalLink } from "react-icons/tb";
@@ -44,7 +44,7 @@ export default function Academic() {
       <h1 className="text-xl font-semibold text-slate-950 mb-3">Graduação</h1>
 
       <div className="space-y-1 mb-10">
-        <Accordion label="Análise e Desenvolvimento de Sistemas">
+        <SlideDown label="Análise e Desenvolvimento de Sistemas">
           <div className="space-y-2">
             <p className="font-semibold">Universidade Piaget - Suzano</p>
             <p className="text-sm text-slate-600">Concluído em 2025</p>
@@ -53,7 +53,7 @@ export default function Academic() {
               análise de requisitos até a implementação e manutenção de sistemas
             </p>
           </div>
-        </Accordion>
+        </SlideDown>
       </div>
 
       <h2 className="text-xl font-semibold text-slate-950 mb-3">

@@ -47,12 +47,12 @@ export default function About() {
         <p className="mb-2 text-slate-600">
           👋 Ei! Sou o Américo, desenvolvedor front-end. Formado em Análise e Desenvolvimento de
           Sistemas, e um grande apaixonado por tecnologia e tudo que envolve
-          desenvolvimento. Sou curioso, gosto de mergulhar de cabeça em tudo que envolve desenvolvimento. Sou movido por curiosidade,
-          disciplina e pela vontade de transformar ideias em interfaces funcionais, modernas e fiéis ao design.
+          desenvolvimento. Sou curioso, gosto de mergulhar de cabeça nos projetos. sempre buscando aprender,
+          evoluir e entregar interfaces funcionais, modernas e fiéis ao design.
         </p>
         <p className="mb-2 text-slate-600">
           Minha principal tecnologia é <b>React</b>, e atualmente venho me aprofundando ainda mais em <b>Next.js</b> e <b>Typescript</b>.
-          Além do front-end, também tenho experiência com Node.js e bancos de dados como Firebase, MongoDb e Mysql, o que me ajuda a entender melhor o fluxo
+          Além do front-end, também tenho experiência prática com Node.js e bancos de dados como Firebase, MongoDb e Mysql, o que me ajuda a entender melhor o fluxo
           completo das aplicações.
           Estou sempre explorando novas ferramentas e pensando em evoluir, inclusive estou planejando cursar Engenharia de
           Software para expandir ainda mais meus conhecimentos.

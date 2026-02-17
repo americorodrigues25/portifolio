@@ -142,6 +142,7 @@ export const projects = [
 
       Os usuários podem criar contas, fazer login, criar, editar e excluir posts. Também é possível visualizar posts de outros usuários em um feed interativo.  
       `,
+    url: "https://dev-blog-ruddy-one.vercel.app/",
     github: "https://github.com/americorodrigues25/DevBlog",
     linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7371878040051736576/",
     video: demodevblog,

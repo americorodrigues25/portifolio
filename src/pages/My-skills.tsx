@@ -24,30 +24,49 @@ import { VscSourceControl } from "react-icons/vsc";
 
 export default function Skills() {
   const hardSkills = [
-    { icon: <FaReact aria-hidden="true" />, name: "React", description: "Sólido conhecimento em react, criando aplicações modernas e responsivas." },
-    { icon: <RiNextjsFill aria-hidden="true" />, name: "Next.js", description: "teste" },
-    { icon: <BiLogoTypescript aria-hidden="true" />, name: "TypeScript", description: "teste" },
-    { icon: <IoLogoJavascript aria-hidden="true" />, name: "JavaScript", description: "teste" },
-    { icon: <RiTailwindCssFill aria-hidden="true" />, name: "Tailwind CSS", description: "teste" },
-    { icon: <FaBootstrap aria-hidden="true" />, name: "Bootstrap", description: "teste" },
+    { icon: <FaReact aria-hidden="true" />, name: "React", description: "Criação de interfaces modernas, componentizadas e reutilizáveis." },
+
+    { icon: <RiNextjsFill aria-hidden="true" />, name: "Next.js", description: "Aplicações rápidas com SSR, rotas e otimizações de performance." },
+
+    { icon: <BiLogoTypescript aria-hidden="true" />, name: "TypeScript", description: "Tipagem para evitar erros e deixar o código mais previsível." },
+
+    { icon: <IoLogoJavascript aria-hidden="true" />, name: "JavaScript", description: "Domínio de ES6+, manipulação de dados e lógica de aplicações." },
+
+    { icon: <RiTailwindCssFill aria-hidden="true" />, name: "Tailwind CSS", description: "Estilização rápida e organizada direto nas classes utilitárias." },
+
+    { icon: <FaBootstrap aria-hidden="true" />, name: "Bootstrap", description: "Criação ágil de layouts responsivos e padronizados." },
+
     {
       icon: <SiStyledcomponents aria-hidden="true" />,
       name: "Styled Components",
-      description: "teste"
+      description: "Estilos isolados por componente e mais organização visual."
     },
-    { icon: <FaNodeJs aria-hidden="true" />, name: "Node.js", description: "teste" },
-    { icon: <TbApi aria-hidden="true" />, name: "APIs REST", description: "teste" },
-    { icon: <TbBrandMysql aria-hidden="true" />, name: "MySQL", description: "teste" },
-    { icon: <IoLogoFirebase aria-hidden="true" />, name: "Firebase", description: "teste" },
-    { icon: <SiMongodb aria-hidden="true" />, name: "MongoDB", description: "teste" },
-    { icon: <VscSourceControl aria-hidden="true" />, name: "Git & GitHub", description: "teste" },
-    { icon: <SiJest aria-hidden="true" />, name: "Jest", description: "teste" },
-    { icon: <SiCypress aria-hidden="true" />, name: "Cypress", description: "teste" },
-    { icon: <SiPostman aria-hidden="true" />, name: "Postman", description: "teste" },
-    { icon: <SiVercel aria-hidden="true" />, name: "Vercel", description: "teste" },
-    { icon: <SiRender aria-hidden="true" />, name: "Render", description: "teste" },
-    { icon: <SiJirasoftware aria-hidden="true" />, name: "Scrum & Agile", description: "teste" },
+
+    { icon: <FaNodeJs aria-hidden="true" />, name: "Node.js", description: "Criação de APIs e regras de negócio no backend." },
+
+    { icon: <TbApi aria-hidden="true" />, name: "APIs REST", description: "Integração entre frontend e backend com boas práticas." },
+
+    { icon: <TbBrandMysql aria-hidden="true" />, name: "MySQL", description: "Modelagem e consultas em banco de dados relacional." },
+
+    { icon: <IoLogoFirebase aria-hidden="true" />, name: "Firebase", description: "Autenticação, banco em tempo real e deploy rápido." },
+
+    { icon: <SiMongodb aria-hidden="true" />, name: "MongoDB", description: "Banco NoSQL para aplicações escaláveis e flexíveis." },
+
+    { icon: <VscSourceControl aria-hidden="true" />, name: "Git & GitHub", description: "Versionamento, branches e colaboração em equipe." },
+
+    { icon: <SiJest aria-hidden="true" />, name: "Jest", description: "Testes unitários para garantir estabilidade do código." },
+
+    { icon: <SiCypress aria-hidden="true" />, name: "Cypress", description: "Testes end-to-end simulando o usuário real." },
+
+    { icon: <SiPostman aria-hidden="true" />, name: "Postman", description: "Testes e documentação de endpoints de API." },
+
+    { icon: <SiVercel aria-hidden="true" />, name: "Vercel", description: "Deploy contínuo de aplicações frontend com facilidade." },
+
+    { icon: <SiRender aria-hidden="true" />, name: "Render", description: "Hospedagem de APIs e serviços backend." },
+
+    { icon: <SiJirasoftware aria-hidden="true" />, name: "Scrum & Agile", description: "Organização de tarefas, sprints e trabalho em equipe." },
   ];
+
 
   const softSkills = [
     {

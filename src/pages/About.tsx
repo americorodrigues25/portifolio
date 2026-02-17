@@ -45,22 +45,22 @@ export default function About() {
           Desenvolvedor Front-End
         </h1>
         <p className="mb-2 text-slate-600">
-          👋 Ei! Sou o Américo, desenvolvedor front-end. Formado em Análise e Desenvolvimento de
-          Sistemas, e um grande apaixonado por tecnologia e tudo que envolve
-          desenvolvimento. Sou curioso, gosto de mergulhar de cabeça nos projetos. sempre buscando aprender,
-          evoluir e entregar interfaces funcionais, modernas e fiéis ao design.
+          Sou Desenvolvedor Front-End formado em Análise e Desenvolvimento de Sistemas, com foco na criação de
+          interfaces modernas, performáticas e fiéis ao design.
         </p>
         <p className="mb-2 text-slate-600">
-          Minha principal tecnologia é <b>React</b>, e atualmente venho me aprofundando ainda mais em <b>Next.js</b> e <b>Typescript</b>.
-          Além do front-end, também tenho experiência prática com Node.js e bancos de dados como Firebase, MongoDb e Mysql, o que me ajuda a entender melhor o fluxo
-          completo das aplicações.
-          Estou sempre explorando novas ferramentas e pensando em evoluir, inclusive estou planejando cursar Engenharia de
-          Software para expandir ainda mais meus conhecimentos.
+          Atuo principalmente com <b>React</b>, <b>Next.js</b> e <b>TypeScript</b>, desenvolvendo aplicações web escaláveis, organizadas
+          e com boas práticas de código. Tenho experiência prática na construção de aplicações Full Stack utilizando Node.js,
+          além de integração com bancos de dados como Firebase, MongoDB e MySQL, o que me permite compreender o fluxo completo
+          da aplicação, do front ao back-end.
         </p>
+        <p className="mb-2 text-slate-600">Tenho perfil analítico, aprendizado rápido e forte atenção à qualidade do código.
+          Busco constantemente evoluir tecnicamente e aprofundar meus conhecimentos em arquitetura, performance e boas práticas
+          de desenvolvimento. Planejo iniciar uma pós-graduação em Engenharia de Software para fortalecer ainda mais minha base técnica.</p>
         <p className="text-slate-600">
-          No momento, estou dando meus próximos passos para ingressar oficialmente no mercado como desenvolvedor
-          front-end. Estou aberto a novas oportunidades e desafios, se quiser saber mais sobre mim ou entrar em contato,
-          fique à vontade para me chamar nas redes sociais.
+          Atualmente, busco minha primeira oportunidade profissional como desenvolvedor, onde eu possa contribuir com dedicação, organização e evolução contínua, agregando valor real ao time e aos projetos.
+
+          Estou aberto a oportunidades e conexões na área de tecnologia.  🚀
         </p>
       </div>
     </main>

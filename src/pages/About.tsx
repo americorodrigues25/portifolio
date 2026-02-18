@@ -28,7 +28,7 @@ export default function About() {
           <div className="space-y-4">
             <SocialLinks className="justify-start" />
             <a
-              href="/cv-americo.pdf"
+              href="/FrontEnd_Americo_Rodrigues.pdf"
               download="Americo_Rodrigues_CV.pdf"
               aria-label="Baixar currículo em PDF"
               className="bg-slate-800 w-44 md:w-60 px-5 py-4 flex items-center justify-center gap-3 text-slate-200 font-medium rounded hover:bg-slate-600 transition-all"

@@ -31,7 +31,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="mailto:americo.200422@gmail.com"
+          href="mailto:americorodrigues.br@gmail.com"
           aria-label="Enviar email"
           className="text-red-600 hover:scale-110 transition-transform"
         >

@@ -39,7 +39,7 @@ const SocialLinks = ({ className }: SocialLinksProps) => {
                 </a>
 
                 <a
-                    href="mailto:americo.200422@gmail.com"
+                    href="mailto:americorodrigues.br@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-slate-800 text-slate-200 text-lg hover:bg-slate-600 transition"

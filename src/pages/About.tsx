@@ -40,27 +40,29 @@ export default function About() {
         </div>
       </div>
 
-      <div className="">
+      <div>
         <h1 className="text-slate-950 text-3xl font-bold mb-4 mt-10">
           Desenvolvedor Front-End
         </h1>
-        <p className="mb-2 text-slate-600">
-          Sou Desenvolvedor Front-End formado em Análise e Desenvolvimento de Sistemas, com foco na criação de
-          interfaces modernas, performáticas e fiéis ao design.
-        </p>
-        <p className="mb-2 text-slate-600">
-          Atuo principalmente com <b>React</b>, <b>Next.js</b> e <b>TypeScript</b>, desenvolvendo aplicações web escaláveis, organizadas
-          e com boas práticas de código. Tenho experiência prática na construção de aplicações Full Stack utilizando Node.js,
-          além de integração com bancos de dados como Firebase, MongoDB e MySQL, o que me permite compreender o fluxo completo
-          da aplicação, do front ao back-end.
-        </p>
-        <p className="mb-2 text-slate-600">Tenho perfil analítico, aprendizado rápido e forte atenção à qualidade do código.
-          Busco constantemente evoluir tecnicamente e aprofundar meus conhecimentos em arquitetura, performance e boas práticas
-          de desenvolvimento. Planejo iniciar uma pós-graduação em Engenharia de Software para fortalecer ainda mais minha base técnica.</p>
-        <p className="text-slate-600">
-          Atualmente, busco minha primeira oportunidade profissional como desenvolvedor, onde eu possa contribuir com dedicação, organização e evolução contínua, agregando valor real ao time e aos projetos.
 
-          Estou aberto a oportunidades e conexões na área de tecnologia.  🚀
+        <p className="mb-2 text-slate-600">
+            Sou desenvolvedor Front-End desde 2024, formado em Análise e Desenvolvimento de Sistemas, com experiência prática na construção de aplicações web completas e sistemas em produção.
+        </p>
+
+        <p className="mb-2 text-slate-600">
+          Já desenvolvi dashboards administrativos, sistema financeiro, aplicação mobile e projetos fullstack, atuando desde a construção da interface até a integração com APIs e bancos de dados. Gosto de participar do processo como um todo e entender como cada parte da aplicação se conecta.
+        </p>
+
+        <p className="mb-2 text-slate-600">
+          Trabalho principalmente com <b>React, Next.js e TypeScript</b>, e utilizo Node.js para integrar ou estruturar o backend. Tenho experiência com autenticação, consumo de APIs REST, geração de relatórios e deploy em produção.
+        </p>
+
+        <p className="mb-2 text-slate-600">
+          Meu foco vai além de “fazer funcionar”. Eu me preocupo com organização, legibilidade, performance e experiência do usuário. Acredito que código bom é aquele que resolve o problema hoje e continua fácil de evoluir amanhã.
+        </p>
+
+        <p className="text-slate-600">
+          Atualmente busco minha primeira oportunidade formal como desenvolvedor, já com experiência prática em projetos reais. Quero fazer parte de um time onde eu possa contribuir, aprender com pessoas mais experientes e crescer construindo soluções que gerem impacto de verdade.
         </p>
       </div>
     </main>
